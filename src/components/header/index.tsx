@@ -5,11 +5,12 @@ import videoIcon from "../../assets/icons/video_icon.svg";
 import headerNavbar_2 from "../../assets/icons/header_navbar_2.svg";
 import notification from "../../assets/icons/notification_icon.svg";
 import profil from "../../assets/icons/header_profile.svg";
+import { FC } from "react";
 
-const Header = () => {
+const Header:FC = () => {
   return (
-    <div className="pt-5 flex items-center justify-between overflow-hidden max-w-full">
-      <div className="flex items-center pl-8 gap-8">
+    <div className="pt-5 flex items-center  justify-between">
+      <div className="flex items-center gap-8">
         <div className="flex items-center gap-6">
           <img src={headerNvbar} alt="" />
           <img src={headericon} alt="" />
@@ -29,15 +30,20 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center hidden sm:flex gap-12 pr-16">
+      <div className=" items-center hidden sm:flex gap-12 pr-16">
   <img src={videoIcon} alt="Video" />
   <img src={headerNavbar_2} alt="Navbar 2" />
-  <div className="relative">
-    <img src={notification} alt="Notification" />
-    <h1 className="absolute top-[-5px] left-2 w-5 h-5 text-[12px] font-bold text-white bg-red-500 flex items-center justify-center rounded-full">
-      1
-    </h1>
-  </div>
+  <div className="relative bl">
+  <img src={notification} alt="Notification" />
+  <span
+    className="absolute left-2 w-5 h-5 text-[12px] top-[-5px] font-bold text-white bg-red-500 flex items-center justify-center rounded-full"
+
+  >
+    3
+  </span>
+</div>
+
+
   <img src={profil} alt="Profile" />
 </div>
 

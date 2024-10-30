@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className='container  max-w-[1400px] mx-auto '>
       <Header />
       <div className="container max-w-[1400px] mx-auto">
         {children}

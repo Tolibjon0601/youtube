@@ -7,6 +7,3 @@
 .swiper-button-next:after {
   content: url("./assets/icons/next_arrow") !important;
 } */
-swiper-pagination-bullet:{
-  display: none;
-}

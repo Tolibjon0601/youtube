@@ -1,6 +1,8 @@
+import FoodDrink from "./foodDrink"
 import HomeNavbar from "./homeNavbar"
 import Reccomended from "./homeRecomenned"
 import HomeVideosPage from "./homeVideos"
+import { FC } from 'react';
 
 const HomePage = () => {
   return (
@@ -12,6 +14,7 @@ const HomePage = () => {
 <div>
 <HomeVideosPage/>
 <Reccomended/>
+<FoodDrink/>
 </div>
     </div>
   )
